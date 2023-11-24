@@ -1,0 +1,15 @@
+/*/geral/*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*/header/*/
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
