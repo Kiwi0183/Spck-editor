@@ -9,30 +9,31 @@
 </head>
 
 <body>
-  
+
   <div class="header">
     <div class="flex">
-      
+
       <div class="img-logo"><img src="/logo.jpg" alt="logo">
       </div><!--img logo-->
-      
+
       <div class="navegacao">
         <a href="#">inicio</a>
         <a href="#">projetos</a>
         <a href="#">contato</a>
       </div><!--navegacao-->
-      
+
       <div class="btn-header">
-        <button>#</button>
+        <button></button>
       </div><!--btn header-->
-      
+
     </div><!--flex-->
   </div><!--header-->
-  
+
   <div class="body">
     <div class="flex">
       <div class="body-top">
-        <h1></h1>
+        <h1>olá meu nome e kauan</h1>
+        <p>aqui voce vai poder ver os meus projetos e todo sobre mim</p>
       </div><!--body top-->
     </div><!--flex-->
   </div><!--body-->
@@ -45,53 +46,86 @@
 <style>
 /*/geral/*/
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-body{
+body {
   background-color: #22222B;
 }
 
 /*/header/*/
-.header .flex{
-  justify-content: center;
+.header .flex {
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 10px;
   padding: 14px;
   background-color: #252639;
-  
+
 }
 
-.img-logo{
-  margin-right: 17%;
-  scale: 10px;
+.img-logo {
+  margin-left: 20px;
+}
+
+.img-logo img {
+  width: 80px;
+}
+
+.navegacao {
+  margin-left: 63%;
 }
 
 .navegacao a {
   text-decoration: none;
   margin-right: 10px;
   color: #FFFFFF;
-  
+  font-size: 20px
 }
 
-.btn-header{
-  
+.btn-header {
+  margin-right: 20px;
+}
+
+.btn-header button {
+  border: none;
   background-color: red;
-  padding: %
+  padding: 20px;
+  display: none;
 }
 
 /*/body/*/
 
-.body .flex{
-  
+.body .flex {
+  color: #FFFFFF;
+  font-size: 10px
 }
 
+/*/responsivo/*/
+
+@media screen and (max-width: 900px) {
+  .navegacao {
+    display: none;
+  }
+
+  .img-logo {
+    margin-right: 60%;
+  }
+
+  .img-logo img {
+    width: 42px;
+  }
+
+  .btn-header button {
+    display: flex;
+  }
+
+}
 </style>
 <script></script>
 
